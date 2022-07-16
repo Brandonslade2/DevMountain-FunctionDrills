@@ -1,63 +1,92 @@
 /*
-  Some of the following questions will ask you to use
-  arrow function syntax. On the problems that don't,
-  feel free to practice with any syntax.
+Some of the following questions will ask you to use
+arrow function syntax. On the problems that don't,
+feel free to practice with any syntax.
 */
 
 
 ////////////////// PROBLEM 1 ////////////////////
 /*
-  Create a function called helloWorld which simply console logs 'Hello, World!'
-  Call the function.
+Create a function called helloWorld which simply console logs 'Hello, World!'
+Call the function.
 */
 
-//CODE HERE
+function helloworld() {
+  console.log('Hello, World!')
+}
 
+helloworld()
 
 ////////////////// PROBLEM 2 ////////////////////
 
 /*
-    Write an arrow function called 'jsNinja' that returns the string: 'I am a JavaScript ninja!'
+  Write an arrow function called 'jsNinja' that returns the string: 'I am a JavaScript ninja!'
 */
 
-//CODE HERE
+var jsNinja = () => {
+  return 'I am a JavaScript ninja!'
+}
 
 
 ////////////////// PROBLEM 3 ////////////////////
 /*
-  Create a function called printName which takes in a person's name and console logs it.
-  Ex. If 'Cameron' were passed in as the argument, Cameron would be console logged.
-  Call the function, passing in an argument.
+Create a function called printName which takes in a person's name and console logs it.
+Ex. If 'Cameron' were passed in as the argument, Cameron would be console logged.
+Call the function, passing in an argument.
 */
 
-//CODE HERE
+function printName(name) {
+  console.log(name)
+}
+
+printName('Cameron')
+
+//Q: HOW CAN I MAKE THIS VALID EVEN WHEN ITS NOT A STRING? LIKE printName(Cameron) INSTEAD?
 
 
 ////////////////// PROBLEM 4 ////////////////////
 /*
-  Create a function called greeting that
-  accepts name as its only parameter.
-  greeting should log the string 'Hello, '
-  plus the value of the name parameter.
-  Ex. If Jake were passed in as the argument, the function would log 'Hello, Jake'
-  Make sure to call your function and pass in an argument.
+Create a function called greeting that
+accepts name as its only parameter.
+greeting should log the string 'Hello, '
+plus the value of the name parameter.
+Ex. If Jake were passed in as the argument, the function would log 'Hello, Jake'
+Make sure to call your function and pass in an argument.
 */
 
-//CODE HERE
+function greeting(name) {
+  console.log(`Hello, ${name}`)
+}
+
+greeting('Jake')
+
+
+//Q: HOW CAN I MAKE THIS VALID EVEN WHEN ITS NOT A STRING? LIKE greeting(Jake) INSTEAD?
 
 
 ////////////////// PROBLEM 5 ////////////////////
 
 /*
-    Write an arrow function called 'compareNums' that takes in 2 parameters, 
-    which will be numbers. 
-    The function should return the bigger number. 
-    If the numbers are the same, just return the number.
+  Write an arrow function called 'compareNums' that takes in 2 parameters,
+  which will be numbers.
+  The function should return the bigger number.
+  If the numbers are the same, just return the number.
 
-    Brownie points if you use a ternary statement (only spend significant time on this if you have wiggle room)
+  Brownie points if you use a ternary statement (only spend significant time on this if you have wiggle room)    //LOOK INTO THIS LATER
 */
 
-//CODE HERE
+let compareNums = (number1, number2) => {
+  if (number1 > number2) {
+      return number1
+  } else if (number2 > number1) {
+      return number2
+  } else {
+      return number1
+  }
+}
+
+//console.log(compareNums(11, 10))
+
 
 
 ////////////////// PROBLEM 6 ////////////////////
@@ -68,7 +97,9 @@
   Create a variable outside the function called 'sum' and set it equal to add invoked (called), passing in 2 arguments.
 */
 
-//CODE HERE
+function add(num1,num2) {
+  
+}
 
 
 ////////////////// PROBLEM 7 ////////////////////
